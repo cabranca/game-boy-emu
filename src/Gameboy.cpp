@@ -1,6 +1,6 @@
 #include "Gameboy.h"
 
-Gameboy::Gameboy()
+Gameboy::Gameboy() : m_Running(true)
 {
     
 }
@@ -16,7 +16,7 @@ void Gameboy::run()
 
 uint16_t Gameboy::fetch()
 {
-
+    return 0;
 }
 
 void Gameboy::decodeExecute(uint16_t instruction)
