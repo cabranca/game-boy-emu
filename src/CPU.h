@@ -13,6 +13,7 @@ class CPU
 {
     public:
         CPU();
+        ~CPU() = default;
 
         private:
         std::unique_ptr<ALU> m_ALU;
